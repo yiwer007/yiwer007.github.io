@@ -76,6 +76,8 @@
     $('#site-title').textContent=$('#profile-name').textContent=bi('钟益华','Yihua Zhong');
     $('#language span').textContent=bi('English','中文');$('#language').href=lang==='zh'?'?lang=en':'?lang=zh';
     $('#language').setAttribute('aria-label',bi('切换到英文主页','Switch to Chinese homepage'));
+    $('.portrait').src=config.portraits[lang];
+    $('.portrait').alt=bi('钟益华的毕业照','Portrait of Yihua Zhong');
     renderContacts();renderAbout();renderEducation();renderPapers();renderOther();
     document.dispatchEvent(new Event('site-language-change'));
   }
