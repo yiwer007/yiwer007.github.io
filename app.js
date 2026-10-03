@@ -43,7 +43,7 @@
   }
   function renderEducation() {
     const schools=config.schools;
-    $('#education-list').innerHTML=profile.education.map((e,i)=>`<article class="education-item">${external(schools[i].url,`<img src="${esc(schools[i].logo)}" alt="${esc(txt(e.school))} ${bi('校徽','logo')}" width="43" height="43">`,'school-logo-link')}<div class="education-time">${esc(e.period.replace('–',' — '))}${i===0?`<br><span class="expected">${bi('预计毕业','Expected completion')}</span>`:''}</div><div class="education-body"><h3>${external(schools[i].url,esc(txt(e.school)))}</h3><p>${esc(i<2 ? txt(e.affiliation).split(' · ')[0]+' · ' : '')}${esc(txt(e.degree))}</p><p class="education-note">${e.advisor[lang]?`<span>${esc(txt(e.advisor))}</span>`:''}<span>${bi(schools[i].cityZh,schools[i].cityEn)}</span></p></div></article>`).join('');
+    $('#education-list').innerHTML=profile.education.map((e,i)=>`<article class="education-item">${external(schools[i].url,`<img src="${esc(schools[i].logo)}" alt="${esc(txt(e.school))} ${bi('校徽','logo')}" width="43" height="43">`,'school-logo-link')}<div class="education-time">${esc(e.period.replace('–',' — '))}${i===0?`<br><span class="expected">${bi('预计毕业','Expected completion')}</span>`:''}</div><div class="education-body"><h3>${external(schools[i].url,esc(txt(e.school)))}</h3><p>${esc(txt(e.college)+' · ')}${esc(txt(e.degree))}</p>${e.laboratory?`<p class="education-note">${esc(txt(e.laboratory))}</p>`:''}<p class="education-note">${e.advisor[lang]?`<span>${esc(txt(e.advisor))}</span>`:''}<span>${bi(schools[i].cityZh,schools[i].cityEn)}</span></p></div></article>`).join('');
   }
   const highlight=text=>esc(text).replace(/Yihua Zhong|Zhong Y\b|钟益华/g,'<span class="author-self">$&</span>');
   function renderPapers() {
