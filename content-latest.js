@@ -1,11 +1,11 @@
-/* Transcribed from resume-latest-source.txt. English renderings of Chinese
+/* Transcribed from resume-latest-source.txt and corrected by the user. English renderings of Chinese
    project titles and descriptions are translations, not official titles. */
 (() => {
   const bi = (zh, en) => ({ zh, en });
   window.LATEST_PROFILE = {
     education: [
-      { period: '2024.09–2028.06', school: bi('华东师范大学', 'East China Normal University'), college: bi('上海智能教育研究院', 'Shanghai Institute of AI for Education'), degree: bi('智能教育 · 博士在读', 'Ph.D. student in Intelligent Education'), advisor: bi('导师：黄昌勤教授', 'Supervisor: Prof. Changqin Huang'), affiliation: bi('华东师大上海智能教育研究院 · AI 教育应用核心成员', 'Shanghai Institute of AI for Education, ECNU · Core member in AI applications in education') },
-      { period: '2021.09–2024.06', school: bi('浙江师范大学', 'Zhejiang Normal University'), college: bi('教育学院', 'College of Education'), laboratory: bi('浙江全省智能教育技术与应用重点实验室', 'Zhejiang Provincial Key Laboratory of Intelligent Education Technology and Application'), degree: bi('教育技术学 · 硕士', 'Master’s degree in Educational Technology'), advisor: bi('导师：王希哲教授', 'Supervisor: Prof. Xizhe Wang'), affiliation: bi('浙江全省智能教育技术与应用重点实验室 · 核心成员', 'Zhejiang Provincial Key Laboratory of Intelligent Education Technology and Application · Core member') },
+      { period: '2024.09–2028.06', school: bi('华东师范大学', 'East China Normal University'), college: bi('上海智能教育研究院', 'Shanghai Institute of AI for Education'), degree: bi('智能教育 · 博士在读', 'Ph.D. student in Intelligent Education'), advisor: bi('导师：黄昌勤教授', 'Supervisor: Prof. Changqin Huang'), advisorUrl: 'https://www.scholat.com/cqhuang', affiliation: bi('华东师大上海智能教育研究院 · AI 教育应用核心成员', 'Shanghai Institute of AI for Education, ECNU · Core member in AI applications in education') },
+      { period: '2021.09–2024.06', school: bi('浙江师范大学', 'Zhejiang Normal University'), college: bi('教育学院', 'College of Education'), laboratory: bi('浙江全省智能教育技术与应用重点实验室', 'Zhejiang Provincial Key Laboratory of Intelligent Education Technology and Application'), degree: bi('教育技术学 · 硕士', 'Master’s degree in Educational Technology'), advisor: bi('导师：王希哲教授', 'Supervisor: Prof. Xizhe Wang'), advisorUrl: 'https://mypage.zjnu.edu.cn/WXZ4/zh_CN/index.htm', affiliation: bi('浙江全省智能教育技术与应用重点实验室 · 核心成员', 'Zhejiang Provincial Key Laboratory of Intelligent Education Technology and Application · Core member') },
       { period: '2017.09–2021.06', school: bi('江西师范大学', 'Jiangxi Normal University'), college: bi('软件学院', 'School of Software'), degree: bi('软件工程 · 学士', 'Bachelor’s degree in Software Engineering'), advisor: bi('', ''), affiliation: bi('', '') }
     ],
     projects: [
