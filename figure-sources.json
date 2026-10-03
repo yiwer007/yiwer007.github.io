@@ -1,0 +1,74 @@
+[
+  {
+    "title": "An Explicit-Thinking LLM-Based Cognitive Apprenticeship Approach to Promote Students’ Metacognition, Higher Order Thinking Skills, and Learning Performance",
+    "doi": "10.1109/TLT.2026.3696968",
+    "figure": "assets/papers/p1.png",
+    "caption": "Figure 2. Writing process based on the ETLLM-CA approach.",
+    "source": "https://ieeexplore.ieee.org/document/11535285/",
+    "credit": "Zhong et al. (2026), Fig. 2. IEEE Transactions on Learning Technologies. Original figure from the author’s final published PDF."
+  },
+  {
+    "title": "面向大语言模型系统能力培养的“三段式”实验教学设计——以ChatGLM-6B本地微调为例",
+    "doi": "10.16512/j.cnki.jsjjy.2026.02.041",
+    "figure": "assets/papers/p2.png",
+    "caption": "图1 “三段式”能力导向的大语言模型教学设计结构",
+    "source": "https://jyjs.cbpt.cnki.net/portal/journal/portal/client/paper/cd012c3ee66c14436b02205f2df37530",
+    "credit": "钟益华等（2026），图1，《计算机教育》。来自作者提供的正式论文。"
+  },
+  {
+    "title": "Enhancing student reading performance through a personalized two-tier problem-based learning approach with generative artificial intelligence",
+    "doi": "10.1057/s41599-025-04919-4",
+    "figure": "assets/papers/p3.png",
+    "caption": "Figure 3. Design of the PT-PBL approach.",
+    "source": "https://media.springernature.com/full/springer-static/image/art%3A10.1057%2Fs41599-025-04919-4/MediaObjects/41599_2025_4919_Fig3_HTML.png",
+    "credit": "Huang et al. (2025), Fig. 3. Humanities and Social Sciences Communications. CC BY-NC-ND 4.0. Original figure, unmodified."
+  },
+  {
+    "title": "从单智能体到多智能体：大模型智能体支持下的激励型学习活动设计与实证研究",
+    "doi": "10.16382/j.cnki.1000-5560.2025.05.004",
+    "figure": "assets/papers/p4.jpg",
+    "caption": "图2 基于多智能体的激励型学习活动设计",
+    "source": "https://xbjk.ecnu.edu.cn/fileup/1000-5560/FIGURE/2025-43-5/Images/2025-5-44/hdsfdxxbjykxb-2025-5-44-2.jpg",
+    "credit": "黄昌勤等（2025），图2，《华东师范大学学报（教育科学版）》。期刊官方原图。"
+  },
+  {
+    "title": "ChatPRCS: A Personalized Support System for English Reading Comprehension Based on ChatGPT",
+    "doi": "10.1109/tlt.2024.3405747",
+    "figure": "assets/papers/p5.png",
+    "caption": "Fig. 1. Structure of the ChatPRCS system.",
+    "source": "https://ieeexplore.ieee.org/document/10539340/",
+    "credit": "Wang et al. (2024), Fig. 1. IEEE Transactions on Learning Technologies. Original figure from the author’s final published PDF."
+  },
+  {
+    "title": "From Single-Agent System to Multi-Agent System: Design and Empirical Study on Motivational Learning Activities Supported by LLM-Based Agents",
+    "doi": "10.3868/s110-021-026-0006-5",
+    "figure": "assets/papers/p6.png",
+    "caption": "Figure 2. Design of MAS-Based Motivational Learning Activities",
+    "source": "https://journal.hep.com.cn/fed/EN/PDF/10.3868/s110-021-026-0006-5",
+    "credit": "Huang et al. (2026), Fig. 2. Frontiers of Education in China. Extracted from the publisher’s official PDF."
+  },
+  {
+    "title": "UCMIB-PNS: Balancing Sufficiency and Necessity With Probabilistic Causality and Cross-Modal Uncertainty in Multimodal Sentiment Analysis",
+    "doi": "10.1109/taffc.2025.3606964",
+    "figure": "assets/papers/p7.png",
+    "caption": "Fig. 2. Pipeline of UCMIB-PNS. The pipeline mainly consists of four parts: unimodal feature extraction, multimodal fusion, cross-view information bottleneck, and PNS balancing.",
+    "source": "https://ieeexplore.ieee.org/document/11153045/",
+    "credit": "Chen et al. (2026), Fig. 2. IEEE Transactions on Affective Computing. Original figure from the author’s final published PDF."
+  },
+  {
+    "title": "Investigating student engagement with personalised generative AI feedback: Effects on creative problem-solving and feedback uptake",
+    "doi": "10.14742/ajet.11512",
+    "figure": "assets/papers/p8.png",
+    "caption": "Figure 1. Workflows of two GenAI feedback conditions",
+    "source": "https://ajet.org.au/index.php/AJET/article/download/11512/2322",
+    "credit": "Chen et al. (2026), Fig. 1. Australasian Journal of Educational Technology. Extracted from the publisher’s official PDF."
+  },
+  {
+    "title": "Effects of Personalized Generative AI on Student Creativity: Evidence from Creative Performance, Self-efficacy, and Attention Allocation",
+    "doi": "10.1007/978-981-95-4499-8_31",
+    "figure": "assets/papers/p9.png",
+    "caption": "Fig. 1. Interaction stages across standard and personalized GAI conditions.",
+    "source": "https://link.springer.com/chapter/10.1007/978-981-95-4499-8_31",
+    "credit": "Chen et al. (2026), Fig. 1. ICTE 2025 proceedings, CCIS 2752. Extracted from the author-provided final PDF."
+  }
+]

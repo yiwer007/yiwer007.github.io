@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="author" content="yiwer"><meta name="theme-color" content="#fbfbfa">
+  <meta name="description" content="钟益华，华东师范大学智能教育博士研究生。研究生成式AI教育应用、智能体支持学习、个性化学习与学习分析。">
+  <meta property="og:type" content="website"><meta property="og:title" content="钟益华｜个人学术主页">
+  <meta property="og:url" content="https://yiwer007.github.io/">
+  <meta property="og:image" content="https://yiwer007.github.io/assets/ZYH.png">
+  <meta property="og:description" content="华东师范大学智能教育博士研究生，研究生成式AI教育应用、智能体支持学习、个性化学习与学习分析。">
+  <link rel="canonical" href="https://yiwer007.github.io/">
+  <title>钟益华｜个人学术主页</title><link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="site-extra.css">
+  <script src="site-config.js" defer></script><script src="content-latest.js" defer></script>
+  <script src="papers.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+  <a href="#about" class="skip-link">跳到正文 / Skip to content</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="site-title" href="#about" id="site-title">钟益华</a>
+    <button class="menu-button" type="button" aria-label="打开导航" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
+    <nav class="main-nav" aria-label="主导航" id="main-nav">
+      <a href="#about" data-zh="个人简介" data-en="About">个人简介</a>
+      <a href="#education" data-zh="教育经历" data-en="Education">教育经历</a>
+      <a href="#publications" data-zh="论文成果" data-en="Publications">论文成果</a>
+      <a href="#outputs" data-zh="其他成果" data-en="Other Outputs">其他成果</a>
+      <a href="#honors" data-zh="荣誉奖项" data-en="Honors">荣誉奖项</a>
+      <a href="#experience" data-zh="教学经历" data-en="Teaching">教学经历</a>
+      <a class="language-switch" href="?lang=en" id="language" aria-label="切换到英文主页"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5h18v14H3V5zm2 2v10h14V7H5zm1 2h5v2H9v1h2v2H6V9zm7 0h2l2 3V9h2v5h-2l-2-3v3h-2V9z"/></svg><span>English</span></a>
+    </nav>
+  </div></header>
+  <main class="page-shell">
+    <aside class="profile-panel" aria-label="个人资料">
+      <img class="portrait" src="assets/ZYH.png" width="168" height="168" alt="钟益华的个人照片">
+      <div class="profile-intro"><h1 id="profile-name">钟益华</h1><p class="position" data-zh="华东师范大学 · 智能教育博士研究生" data-en="East China Normal University · Ph.D. Student">华东师范大学 · 智能教育博士研究生</p></div>
+      <div class="contact-list" id="contact-list"></div>
+      <a class="scholar-card" id="scholar-card" hidden target="_blank" rel="noopener noreferrer">
+        <div class="scholar-card-title"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3 1 8l11 5 9-4.1V16h2V8L12 3zm-6 9v5c4 3 8 3 12 0v-5l-6 2.7L6 12z"/></svg> Google Scholar</span><span aria-hidden="true">↗</span></div>
+        <div class="scholar-metrics"><div><strong id="citedby"></strong><span data-zh="引用" data-en="Citations">引用</span></div><div><strong id="hindex"></strong><span data-zh="h 指数" data-en="h-index">h 指数</span></div><div><strong id="i10index"></strong><span data-zh="i10 指数" data-en="i10-index">i10 指数</span></div></div>
+        <small id="scholar-update"></small>
+      </a>
+    </aside>
+    <div class="main-content">
+      <section class="content-section about-section" aria-labelledby="about">
+        <h2 class="section-heading" id="about" data-zh="个人简介" data-en="About Me">个人简介</h2>
+        <div class="intro-text" id="intro-text"></div>
+        <div class="research-row"><strong data-zh="研究领域" data-en="Research">研究领域</strong><div id="research-interests"></div></div>
+      </section>
+      <section class="content-section education-section" aria-labelledby="education">
+        <h2 class="section-heading" id="education" data-zh="教育经历" data-en="Education">教育经历</h2><div class="education-list" id="education-list"></div>
+      </section>
+      <section class="content-section" aria-labelledby="publications">
+        <div class="heading-with-tools"><h2 class="section-heading" id="publications" data-zh="论文成果" data-en="Publications">论文成果</h2><div class="paper-filter" role="group" aria-label="筛选论文类型">
+          <button type="button" class="is-active" data-filter="all" aria-pressed="true" data-zh="全部" data-en="All">全部</button>
+          <button type="button" data-filter="journal" aria-pressed="false" data-zh="期刊" data-en="Journals">期刊</button>
+          <button type="button" data-filter="conference" aria-pressed="false" data-zh="会议" data-en="Conferences">会议</button>
+        </div></div>
+        <p class="publication-legend"><span>钟益华 / Yihua Zhong</span> <b data-zh="表示本人；论文按类别及年份排列。" data-en="indicates my name. Publications are grouped by type and sorted by year.">表示本人；论文按类别及年份排列。</b></p>
+        <div id="publication-groups" aria-live="polite"></div>
+      </section>
+      <section class="content-section" aria-labelledby="outputs">
+        <h2 class="section-heading" id="outputs" data-zh="其他成果" data-en="Other Research Outputs">其他成果</h2><div class="output-columns" id="output-columns"></div>
+      </section>
+      <section class="content-section" aria-labelledby="projects">
+        <h2 class="section-heading" id="projects" data-zh="科研项目" data-en="Research Projects">科研项目</h2>
+        <p class="section-note" data-zh="累计参与省部级以上纵向项目 10 余项；以下展示作为核心成员参与的重要项目。" data-en="I have participated in more than 10 provincial, ministerial, and national research projects. Selected projects in which I served as a core member are listed below.">累计参与省部级以上纵向项目 10 余项；以下展示作为核心成员参与的重要项目。</p><div class="project-list" id="project-list"></div>
+      </section>
+      <section class="content-section" aria-labelledby="honors">
+        <h2 class="section-heading" id="honors" data-zh="荣誉奖项" data-en="Honors & Awards">荣誉奖项</h2><div class="simple-list" id="honor-list"></div>
+      </section>
+      <section class="content-section" aria-labelledby="experience">
+        <h2 class="section-heading" id="experience" data-zh="教学经历" data-en="Teaching Experience">教学经历</h2><div class="experience-list" id="experience-list"></div>
+      </section>
+      <section class="content-section" aria-labelledby="service">
+        <h2 class="section-heading" id="service" data-zh="学术服务" data-en="Academic Service">学术服务</h2><div class="service-content" id="service-content"></div>
+      </section>
+      <section class="content-section last-section" aria-labelledby="skills">
+        <h2 class="section-heading" id="skills" data-zh="专业技能" data-en="Professional Skills">专业技能</h2><div class="skills-list" id="skills-list"></div>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer"><p>© 2026 <span data-zh="钟益华" data-en="Yihua Zhong">钟益华</span></p><p data-zh="最后更新于 2026 年 10 月" data-en="Last updated: October 2026">最后更新于 2026 年 10 月</p></footer>
+  <dialog class="figure-dialog" id="figure-dialog" aria-labelledby="figure-title"><button class="figure-close" aria-label="关闭图片 / Close image">×</button><img id="figure-full" alt=""><h2 id="figure-title"></h2><p id="figure-credit"></p></dialog>
+</body>
+</html>
