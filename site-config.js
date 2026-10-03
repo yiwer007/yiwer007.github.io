@@ -1,5 +1,6 @@
 // Only professional information intended for the public homepage belongs here.
 window.SITE_CONFIG = {
+  visitorEndpoint: null,
   siteUrl: 'https://yiwer007.github.io/',
   email: 'yiwer007@gmail.com',
   links: {

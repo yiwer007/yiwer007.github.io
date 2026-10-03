@@ -1,5 +1,17 @@
 /* Original reference-site rules live in styles.css unchanged. These additions
    cover the user's extra sections, genuine figure credits, and accessibility. */
+.back-to-top{position:fixed;right:24px;bottom:28px;z-index:30;display:flex;align-items:center;flex-direction:column;border:1px solid #d7e1e9;border-radius:12px;padding:8px 7px 6px;background:#fbfbfaf2;color:var(--blue);box-shadow:0 3px 15px #17233112;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.back-to-top svg{width:38px;height:38px;overflow:visible}
+.rocket-label{font-size:10px;line-height:1.6}
+.back-to-top:hover{transform:translateY(-4px);box-shadow:0 5px 18px #17233122}
+.back-to-top:focus-visible{outline:2px solid var(--blue);outline-offset:4px}
+.rocket-flame{transform-origin:24px 34px;opacity:.55}
+.back-to-top:hover .rocket-flame,.is-launching .rocket-flame{animation:rocket-flame .2s ease-in-out infinite alternate;opacity:1}
+.is-launching .rocket-body{animation:rocket-launch .65s ease-in forwards}
+@keyframes rocket-flame{to{transform:scaleY(1.45)}}
+@keyframes rocket-launch{30%{transform:translateY(2px)}100%{transform:translateY(-65px);opacity:0}}
+@media(max-width:720px){.back-to-top{right:12px;bottom:18px;padding:5px}.back-to-top svg{width:32px;height:32px}.rocket-label{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.back-to-top,.country-shape{transition:none}.back-to-top:hover{transform:none}.rocket-flame,.rocket-body{animation:none!important}}
 [hidden]{display:none!important}
 .publication-legend b{font-weight:400}
 .paper-figure{margin:0;min-width:0}

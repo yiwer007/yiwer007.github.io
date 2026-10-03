@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="site-extra.css">
   <script src="site-config.js" defer></script><script src="content-latest.js" defer></script>
   <script src="papers.js" defer></script><script src="app.js" defer></script>
+  <script src="world-map.js" defer></script><script src="visitor-ui.js" defer></script>
 </head>
 <body>
   <a href="#about" class="skip-link">跳到正文 / Skip to content</a>
@@ -74,12 +75,20 @@
       <section class="content-section" aria-labelledby="service">
         <h2 class="section-heading" id="service" data-zh="学术服务" data-en="Academic Service">学术服务</h2><div class="service-content" id="service-content"></div>
       </section>
-      <section class="content-section last-section" aria-labelledby="skills">
+      <section class="content-section" aria-labelledby="skills">
         <h2 class="section-heading" id="skills" data-zh="专业技能" data-en="Professional Skills">专业技能</h2><div class="skills-list" id="skills-list"></div>
+      </section>
+      <section class="content-section visitor-section" aria-labelledby="visitors">
+        <h2 class="section-heading" id="visitors" data-zh="访客分布" data-en="Visitor Distribution">访客分布</h2>
+        <div class="visitor-dashboard">
+          <div class="visitor-map-panel"><svg id="visitor-map" class="world-map" role="img" aria-label="网站访客世界分布地图"></svg><p class="map-credit">地图数据：<a href="https://github.com/VictorCazanave/svg-maps/tree/master/packages/world" target="_blank" rel="noopener noreferrer">SVG Maps</a>（CC BY 4.0）</p></div>
+          <div class="visitor-summary" aria-live="polite"><div class="visitor-metrics"><div><strong id="visit-total">—</strong><span data-zh="总访问次数" data-en="Total visits">总访问次数</span></div><div><strong id="visit-unique">—</strong><span data-zh="独立访客" data-en="Unique visitors">独立访客</span></div><div><strong id="visit-countries">—</strong><span data-zh="国家与地区" data-en="Countries & regions">国家与地区</span></div></div><h3 data-zh="最近访客" data-en="Recent Visitors">最近访客</h3><ol id="recent-visitors" class="recent-visitors"></ol><p id="visitor-status" class="visitor-empty"></p><p class="privacy-note" data-zh="仅显示匿名访客标识与国家或地区，不保存完整 IP 地址。" data-en="Only anonymous visitor IDs and countries or regions are shown. Full IP addresses are not stored.">仅显示匿名访客标识与国家或地区，不保存完整 IP 地址。</p></div>
+        </div>
       </section>
     </div>
   </main>
   <footer class="site-footer"><p>© 2026 <span data-zh="钟益华" data-en="Yihua Zhong">钟益华</span></p><p data-zh="最后更新于 2026 年 10 月" data-en="Last updated: October 2026">最后更新于 2026 年 10 月</p></footer>
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="返回顶部" title="返回顶部" hidden><svg viewBox="0 0 48 48" aria-hidden="true"><g class="rocket-body"><path d="M24 5C15 13 15 23 17 31h14c2-8 2-18-7-26Z" fill="currentColor"/><circle cx="24" cy="20" r="4" fill="#fbfbfa"/><path d="m17 24-7 9v5l9-5m12-9 7 9v5l-9-5" fill="currentColor"/></g><path class="rocket-flame" d="m20 34 4 10 4-10" fill="#df9a55"/></svg><span class="rocket-label" data-zh="返回顶部" data-en="Back to top">返回顶部</span></button>
   <dialog class="figure-dialog" id="figure-dialog" aria-labelledby="figure-title"><button class="figure-close" aria-label="关闭图片 / Close image">×</button><img id="figure-full" alt=""><h2 id="figure-title"></h2><p id="figure-credit"></p></dialog>
 </body>
 </html>

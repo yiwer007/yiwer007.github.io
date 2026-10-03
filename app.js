@@ -77,6 +77,7 @@
     $('#language span').textContent=bi('English','中文');$('#language').href=lang==='zh'?'?lang=en':'?lang=zh';
     $('#language').setAttribute('aria-label',bi('切换到英文主页','Switch to Chinese homepage'));
     renderContacts();renderAbout();renderEducation();renderPapers();renderOther();
+    document.dispatchEvent(new Event('site-language-change'));
   }
   $('#language').addEventListener('click',event=>{event.preventDefault();lang=lang==='zh'?'en':'zh';const url=new URL(location.href);url.searchParams.set('lang',lang);history.replaceState(null,'',url);render()});
   document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{filter=button.dataset.filter;document.querySelectorAll('[data-filter]').forEach(b=>{b.classList.toggle('is-active',b===button);b.setAttribute('aria-pressed',String(b===button))});renderPapers()}));
