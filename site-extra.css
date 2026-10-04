@@ -84,3 +84,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offse
 @media(max-width:390px){.figure-button{width:118px}.paper-figure figcaption{max-width:118px}}
 
 @media(max-width:720px){.main-nav{gap:2px 24px}.main-nav>a{font-size:13px}}
+
+.service-content .journal-impact{color:var(--muted)}
+.service-content .journal-impact a{color:inherit;text-decoration:underline;text-decoration-color:#cbd9e3;text-underline-offset:3px}
+.service-content .journal-impact a:hover{color:var(--blue)}
+.service-content .metric-note{font-size:11px;color:var(--faint);line-height:1.8;margin:0 0 15px}

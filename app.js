@@ -68,7 +68,7 @@
     const awards=profile.honors.flatMap(h=>h.years.split('、').map(year=>({...h,year:Number(year)}))).sort((a,b)=>b.year-a.year);
     $('#honor-list').innerHTML=awards.map(h=>`<div><time>${h.year}</time><p>${esc(txt(h.school))} ${esc(txt(h.title))}</p></div>`).join('');
     $('#experience-list').innerHTML=profile.teaching.map(t=>`<article><time>${esc(t.period.replace('–',' — '))}</time><div><h3>${esc(txt(t.school))}</h3><p>${esc(bi('《','')+txt(t.course)+bi('》',''))} · ${esc(txt(t.role))}</p><p>${esc(txt(t.description))}</p></div></article>`).join('');
-    $('#service-content').innerHTML=`<h3>${bi('期刊审稿人','Journal Reviewer')}</h3><ul>${profile.services.journals.map(j=>`<li>${esc(j)}</li>`).join('')}</ul><p>${esc(txt(profile.services.reviewing))} · ${esc(txt(profile.services.membership))}</p>`;
+    $('#service-content').innerHTML=`<h3>${bi('期刊审稿人','Journal Reviewer')}</h3><ul>${profile.services.journals.map(j=>{const m=profile.services.journalMetrics[j];return `<li>${esc(j)} <span class="journal-impact">(${external(m.source,`Impact Factor: ${m.value.toFixed(1)}, ${m.year}`)})</span></li>`;}).join('')}</ul><p class="metric-note">${bi('指标为各官网可核实的两年期 Journal Impact Factor，括号内注明指标年份；核验日期：2026.10.04。点击指标可查看官方来源。','Metrics are the two-year Journal Impact Factors verified on official websites, with the metric year shown; checked on 4 October 2026. Click a metric for its official source.')}</p><p>${esc(txt(profile.services.reviewing))} · ${esc(txt(profile.services.membership))}</p>`;
     $('#skills-list').innerHTML=profile.skills.map(s=>`<div><h3>${esc(txt(s.category))}</h3><p>${s.items.map(i=>esc(txt(i))).join(bi('、',', '))}</p></div>`).join('');
   }
   function render() {
