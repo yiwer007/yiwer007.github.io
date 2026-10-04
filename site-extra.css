@@ -1,5 +1,37 @@
 /* Original reference-site rules live in styles.css unchanged. These additions
    cover the user's extra sections, genuine figure credits, and accessibility. */
+.main-nav{gap:17px}
+.main-nav a[aria-current="page"]{color:var(--blue)}
+.sidebar-cv{display:block;font-size:12px;margin:12px 0 16px;color:var(--blue)}
+.portfolio-lead,.portfolio-text-block p{font-size:13px;line-height:1.9;color:#46515b;margin:9px 0 15px}
+.portfolio-text-block{padding:10px 0 16px;border-bottom:1px solid var(--line-soft)}
+.portfolio-text-block h3,.research-direction h3,.selected-study h3,.system-study h3{font-family:var(--serif);color:var(--ink-strong);font-size:17px;margin:0 0 8px;line-height:1.5}
+.research-direction{display:grid;grid-template-columns:35px 1fr;gap:14px;padding:22px 0;border-bottom:1px solid var(--line-soft)}
+.direction-number{font-family:var(--serif);font-size:23px;color:#9ab0c3}
+.research-direction p{font-size:13px;line-height:1.9;color:#46515b;margin:7px 0}
+.research-direction .research-question{color:var(--blue)}
+.research-direction h4{font-size:12px;margin:13px 0 5px}
+.research-direction ul,.project-research-links ul{padding-left:18px;font-size:12px;line-height:1.7;margin:5px 0}
+.research-direction li,.project-research-links li{margin:5px 0}
+.selected-study,.system-study{display:grid;grid-template-columns:155px 1fr;gap:20px;border-bottom:1px solid var(--line-soft);padding:20px 0}
+.selected-study img{width:155px;height:110px;object-fit:contain;background:#fff;border:1px solid var(--line-soft)}
+.selected-study h3{font-size:15px;margin-top:6px}
+.selected-study p,.system-study p{font-size:12px;line-height:1.8;color:var(--muted);margin:8px 0}
+.system-study figure{margin:0;align-self:start}.system-study img{display:block;width:155px;height:120px;object-fit:contain;background:#fff}
+.system-study figcaption{font-size:8.5px;text-align:center;color:var(--faint);line-height:1.5}
+.resource-links{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}
+.resource-links a{font-size:12px;color:var(--blue);border:1px solid #cbd9e3;padding:4px 9px;border-radius:2px}
+.news-list{padding:0;margin:0;list-style:none}
+.news-list li{display:grid;grid-template-columns:90px 1fr;gap:14px;padding:12px 0;border-bottom:1px solid var(--line-soft);font-size:12px;line-height:1.8}
+.news-list time{color:var(--faint);font-variant-numeric:tabular-nums}
+.project-research-links{margin:10px 0 0;font-size:12px;color:var(--muted)}
+.project-research-links summary{color:var(--blue);cursor:pointer}.project-research-links small{font-size:10px;line-height:1.6}
+.detail-back{font-size:12px;color:var(--blue)}.detail-title{font-family:var(--serif);font-size:25px;line-height:1.4;color:var(--ink-strong);margin:12px 0}
+.detail-authors{font-size:12px;color:var(--muted);line-height:1.8}
+.detail-figure{margin:25px 0;text-align:center}.detail-figure img{display:block;max-width:100%;max-height:480px;object-fit:contain;margin:auto}
+.detail-figure figcaption{font-size:10px;line-height:1.7;color:var(--faint);margin-top:10px}
+@media(max-width:1000px){.header-inner{gap:15px}.main-nav{gap:10px}.main-nav>a{font-size:11px}}
+@media(max-width:500px){.selected-study,.system-study{grid-template-columns:1fr;gap:12px}.selected-study img,.system-study img{width:180px;height:125px}.news-list li{grid-template-columns:75px 1fr;gap:9px}.detail-title{font-size:21px}}
 .back-to-top{position:fixed;right:24px;bottom:28px;z-index:30;display:flex;align-items:center;flex-direction:column;border:1px solid #d7e1e9;border-radius:12px;padding:8px 7px 6px;background:#fbfbfaf2;color:var(--blue);box-shadow:0 3px 15px #17233112;cursor:pointer;transition:transform .2s,box-shadow .2s}
 .back-to-top svg{width:38px;height:38px;overflow:visible}
 .rocket-label{font-size:10px;line-height:1.6}

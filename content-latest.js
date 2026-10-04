@@ -33,6 +33,8 @@
       membership: bi('中国人工智能学会（CAAI）会员', 'Member, Chinese Association for Artificial Intelligence (CAAI)')
     },
     honors: [
+      { years: '2024', title: bi('优秀毕业生', 'Outstanding Graduate'), school: bi('浙江师范大学', 'Zhejiang Normal University') },
+      { years: '2021', title: bi('优秀毕业生', 'Outstanding Graduate'), school: bi('江西师范大学', 'Jiangxi Normal University') },
       { years: '2025、2026', title: bi('一等奖学金', 'First-Class Scholarship'), school: bi('华东师范大学', 'East China Normal University') },
       { years: '2022、2023', title: bi('一等奖学金', 'First-Class Scholarship'), school: bi('浙江师范大学', 'Zhejiang Normal University') },
       { years: '2023', title: bi('成才奖学金', 'Chengcai Scholarship'), school: bi('浙江师范大学', 'Zhejiang Normal University') },

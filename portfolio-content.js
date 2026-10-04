@@ -1,0 +1,33 @@
+// Research narrative and prospective agenda derived from the user's adjustment brief.
+// Empirical paper summaries and publication dates are separately verified.
+(() => {
+const bi=(zh,en)=>({zh,en});
+window.PORTFOLIO={
+ about:[
+ bi('我是钟益华，华东师范大学上海智能教育研究院智能教育专业博士研究生，师从黄昌勤教授。我的学习经历跨越软件工程、教育技术学与智能教育，关注技术设计与学习过程之间的联系。','I am Yihua Zhong, a Ph.D. student in Intelligent Education at the Shanghai Institute of AI for Education, East China Normal University, supervised by Prof. Changqin Huang. My academic training spans software engineering, educational technology, and intelligent education, connecting technical design with the study of learning.'),
+ bi('我的研究围绕一个核心问题：如何设计促进学习者思考、反思与创造的生成式 AI 学习环境？我从生成式 AI、智能体支持学习、个性化学习支持和学习分析四条主线探索这一问题。','My research centers on a question: how can we design generative AI learning environments that encourage learners to think, reflect, and create? I explore this question through generative AI for learning, agent-supported learning, personalized support, and learning analytics.'),
+ bi('我关注学习支持机制如何影响元认知、高阶思维、认知投入及学习行为。现有研究涉及大模型认知学徒制、个性化阅读与问题式学习、单智能体与多智能体学习活动，以及 AI 反馈和多模态情感建模。','I study how learning support mechanisms relate to metacognition, higher-order thinking, cognitive engagement, and learning behavior. My work includes LLM-based cognitive apprenticeship, personalized reading and problem-based learning, single- and multi-agent learning activities, AI feedback, and multimodal sentiment modeling.'),
+ bi('我期待与教育技术、学习科学、人工智能及学科教育领域的研究者合作，围绕 AI 学习环境设计、真实教学情境中的实证评估与学习过程分析开展研究。','I welcome collaboration with researchers in educational technology, learning sciences, artificial intelligence, and subject education on AI learning environment design, empirical evaluation in educational settings, and learning process analysis.')],
+ agenda:bi('从学习需求出发设计 AI 支持机制，再通过教学实验与过程数据检验其作用：把系统设计、学习机制与实证证据连接起来。','Starting from learners’ needs, I connect the design of AI support mechanisms with classroom studies and process data to examine how and under what conditions they support learning.'),
+ directions:[
+ {title:bi('生成式 AI 与认知发展','Generative AI for Learning'),question:bi('AI 支持如何促进思考，而不只是加快答案生成？','How can AI support thinking beyond producing answers?'),body:bi('以认知学徒制、问题式学习和 AI 反馈为切入点，研究支持机制与元认知、高阶思维及学习表现之间的关系。','I investigate cognitive apprenticeship, problem-based learning, and AI feedback to understand the relationship between support mechanisms, metacognition, higher-order thinking, and learning performance.'),papers:[1,3,8,9]},
+ {title:bi('智能体支持学习','Agent-Supported Learning'),question:bi('智能体的角色分工与协作方式如何改变学习活动？','How do agent roles and collaboration shape learning activities?'),body:bi('从单智能体到多智能体，考察活动设计、动机支持与学习互动。相关基金项目进一步涉及认知异常归因与适性引导。','I examine activity design, motivational support, and learning interaction across single- and multi-agent environments. Related project work also addresses cognitive anomaly attribution and adaptive guidance.'),papers:[4,6]},
+ {title:bi('个性化学习支持','Personalized Learning Support'),question:bi('怎样让问题、阅读支架与反馈回应不同学习者的需求？','How can questions, reading scaffolds, and feedback respond to different learners?'),body:bi('将个性化问题生成、两层问题式学习与 GenAI 反馈联系起来，关注学习者对支持的使用方式及学习结果。','I connect personalized question generation, two-tier problem-based learning, and GenAI feedback, focusing on how learners use support and the resulting learning outcomes.'),papers:[5,3,8]},
+ {title:bi('学习分析与认知情感建模','Learning Analytics & Cognitive–Affective Modeling'),question:bi('如何从行为和多模态数据中理解学习过程与状态？','How can behavior and multimodal data help us understand learning processes and states?'),body:bi('研究基础包括多模态情感分析及其不确定性建模；在教育项目中参与学习互动、认知负荷与认知情感数据分析。','My work includes multimodal sentiment analysis and uncertainty modeling. In education research projects, I contribute to analyses of learning interaction, cognitive load, and cognitive–affective data.'),papers:[7,8,9]}
+ ],
+ vision:[
+ {title:bi('人–AI 协同学习','Human–AI Collaborative Learning'),body:bi('未来拟探索学习者与 AI 智能体之间的认知分工、反思机制和协作过程，关注学习者如何保持能动性与自主判断。','I aim to explore cognitive division of labor, reflection, and collaboration between learners and AI agents, with attention to learner agency and independent judgment.')},
+ {title:bi('持续性智能体学习支持','Agentic Learning Systems'),body:bi('未来拟从单次活动走向持续学习支持，研究多智能体的诊断、协作与干预机制，以及长期使用中的学习变化。','I aim to move from individual learning activities toward sustained support, examining multi-agent diagnosis, collaboration, intervention, and learning changes over time.')},
+ {title:bi('动态个性化生成式学习','Personalized Generative Learning'),body:bi('未来拟结合认知、情感和行为状态，研究动态生成的问题、反馈与支架，并通过真实教学中的过程与结果证据评估其效果。','I aim to investigate dynamically generated questions, feedback, and scaffolds informed by cognitive, affective, and behavioral states, evaluated through process and outcome evidence in educational settings.')}
+ ],
+ teachingPhilosophy:bi('我希望 AI 教学帮助学生从“使用工具”走向理解、反思与创造。课程设计应同时关注问题界定、技术实践、证据评估和反思：通过真实教育任务理解模型能力与局限，把系统开发与学习目标相连接，并用过程记录和作品评价支持持续改进。','I aim to help students move from using AI tools toward understanding, reflection, and creation. Teaching should connect problem formulation, technical practice, evaluation of evidence, and reflection. Authentic educational tasks can reveal model capabilities and limitations, connect system development with learning goals, and support improvement through process records and project assessment.'),
+ courses:[{level:bi('本科课程方向（拟）','Proposed Undergraduate Teaching Areas'),items:bi('教育技术学、现代教育技术、人工智能教育、教育数据分析、Python 与教育应用','Educational Technology; Modern Educational Technology; AI in Education; Educational Data Analysis; Python for Educational Applications')},{level:bi('研究生课程方向（拟）','Proposed Graduate Teaching Areas'),items:bi('生成式人工智能教育应用、智能教育研究方法、学习分析、大语言模型与教育、智能教学系统','Generative AI in Education; Research Methods in Intelligent Education; Learning Analytics; LLMs in Education; Intelligent Tutoring Systems')}],
+ systems:[
+ {paper:1,title:'ETLLM-CA',purpose:bi('通过显式思考与认知学徒制支持写作学习中的思考过程。','Supporting thinking during writing through explicit-thinking LLMs and cognitive apprenticeship.')},
+ {paper:5,title:'ChatPRCS',purpose:bi('将 ChatGPT 与个性化问题支持结合，用于英语阅读理解。','Combining ChatGPT with personalized question support for English reading comprehension.')},
+ {paper:6,title:bi('多智能体学习环境','Multi-Agent Learning Environment'),purpose:bi('通过多个大模型智能体的角色与互动支持激励型学习活动。','Supporting motivational learning activities through the roles and interactions of multiple LLM-based agents.')},
+ {paper:3,title:'PT-PBL',purpose:bi('以个性化的两层问题式学习组织生成式 AI 阅读支持。','Organizing generative AI reading support through personalized two-tier problem-based learning.')}
+ ],
+ projectThemes:[[1,3],[8],[7],[4,6],[8],[7],[3,8],[1,9]]
+};
+})();
