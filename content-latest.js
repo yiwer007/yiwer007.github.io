@@ -27,6 +27,7 @@
       { id: 'CN202210466712.7', title: bi('基于负荷约束的协作学习优化方法、系统、设备及介质', 'Method, system, device, and medium for optimizing collaborative learning under load constraints'), type: bi('国家发明专利', 'Chinese invention patent application'), role: bi('第二发明人', 'Second inventor'), status: bi('已受理', 'Application accepted') },
       { id: '2023SR0601805', title: bi('基于深度学习的自动问题生成系统 V1.0', 'Deep-learning-based automatic question generation system V1.0'), type: bi('计算机软件著作权', 'Computer software copyright'), role: bi('第二完成人', 'Second contributor'), status: bi('已登记', 'Registered') }
     ],
+    books: [{ title: bi('生成式AI融入教育的理论、策略与研究设计', 'Generative AI in Education: Theory, Strategies, and Research Design'), url: 'https://doi.airiti.com/LandingPage_B/10.978.986437/2171' }],
     services: {
       journals: ['Journal of Computer Assisted Learning', 'IEEE Transactions on Learning Technologies', 'Educational Technology Research and Development', 'Education and Information Technologies', 'Humanities & Social Sciences Communications', 'International Journal of Educational Technology in Higher Education', 'International Journal of Artificial Intelligence in Education', 'Computational Intelligence'],
       reviewing: bi('累计审稿时长超过 200 小时', 'More than 200 hours of peer review'),

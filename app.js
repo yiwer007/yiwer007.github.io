@@ -62,7 +62,8 @@
   function renderOther() {
     const patents=profile.patents.filter(p=>p.id.startsWith('CN')), software=profile.patents.filter(p=>!p.id.startsWith('CN'));
     const block=(title,items)=>`<div class="output-block"><h3>${title}</h3><ol>${items.map(p=>`<li><strong>${esc(txt(p.title))}</strong><span>${esc(p.id)} · <b>${esc(txt(p.role))}</b> · ${esc(txt(p.status))}</span></li>`).join('')}</ol></div>`;
-    $('#output-columns').innerHTML=block(bi('发明专利','Invention Patents'),patents)+block(bi('软件著作权','Software Copyright'),software)+`<div class="output-block"><h3>${bi('学术服务','Academic Service')}</h3><ol><li><strong>${esc(txt(profile.services.membership))}</strong><span>${esc(txt(profile.services.reviewing))}</span></li></ol></div>`;
+    const books=`<div class="output-block"><h3>${bi('图书','Books')}</h3><ol>${profile.books.map(book=>`<li><strong>${esc(txt(book.title))}</strong>${external(book.url,bi('查看图书 ↗','View book ↗'))}</li>`).join('')}</ol></div>`;
+    $('#output-columns').innerHTML=books+block(bi('发明专利','Invention Patents'),patents)+block(bi('软件著作权','Software Copyright'),software);
     $('#project-list').innerHTML=profile.projects.map((p,i)=>`<article class="project-item"><span>${i+1}.</span><div><h3>${esc(txt(p.title))}</h3><p>${esc(txt(p.funder))} · ${esc(txt(p.role))}</p><p class="responsibility">${esc(txt(p.responsibility))}</p></div></article>`).join('');
     const awards=profile.honors.flatMap(h=>h.years.split('、').map(year=>({...h,year:Number(year)}))).sort((a,b)=>b.year-a.year);
     $('#honor-list').innerHTML=awards.map(h=>`<div><time>${h.year}</time><p>${esc(txt(h.school))} ${esc(txt(h.title))}</p></div>`).join('');
