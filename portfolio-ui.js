@@ -23,7 +23,7 @@ function applyRoute(){
  if(target?.closest('section[data-page]') && route==='home')route=target.closest('section').dataset.page;
  document.body.dataset.page=route;
  for(const section of document.querySelectorAll('.main-content>section[data-page]'))section.hidden=section.dataset.page!==route;
- const titles={home:bi('学术研究主页','Academic Homepage'),research:bi('研究议程','Research'),publications:bi('论文','Publications'),projects:bi('项目','Projects'),teaching:bi('教学','Teaching'),service:bi('学术服务','Academic Service'),about:bi('更多','More'),cv:bi('学术简历','Academic CV'),paper:bi('研究详情','Research Detail')};
+ const titles={home:bi('学术研究主页','Academic Homepage'),research:bi('研究议程','Research'),publications:bi('成果','Research Outputs'),projects:bi('项目','Projects'),teaching:bi('教学','Teaching'),service:bi('学术服务','Academic Service'),about:bi('更多','More'),cv:bi('学术简历','Academic CV'),paper:bi('研究详情','Research Detail')};
  document.title=bi('钟益华','Yihua Zhong')+' | '+titles[route];
  for(const a of document.querySelectorAll('.main-nav>a:not(#language)')){
   const active=a.getAttribute('href').split('?')[0].split('#')[0]===(route==='home'?'index.html':route==='paper'?'publications.html':route+'.html');
