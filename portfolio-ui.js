@@ -14,6 +14,7 @@ function role(p){return p.roleZh?bi(p.roleZh,p.roleEn):bi('合作作者','Co-aut
 function currentRoute(){
  const match=location.pathname.match(/paper-(\d+)\.html$/);
  if(match)return 'paper';
+ if(/service.html$/.test(location.pathname))return 'about';
  const name=location.pathname.split('/').pop().replace('.html','');
  return ['research','publications','projects','teaching','service','about','cv'].includes(name)?name:'home';
 }
@@ -37,7 +38,7 @@ function render(){
  $('#research-agenda').textContent=txt(P.agenda);
  $('#research-directions').innerHTML=P.directions.map((r,i)=>`<article class="research-direction"><span class="direction-number">0${i+1}</span><div><h3>${esc(txt(r.title))}</h3><p class="research-question">${esc(txt(r.question))}</p><p>${esc(txt(r.body))}</p><h4>${bi('相关研究','Related Research')}</h4><ul>${r.papers.map(id=>`<li>${paperLink(id)}</li>`).join('')}</ul></div></article>`).join('');
  $('#research-vision').innerHTML=P.vision.map(v=>`<article class="portfolio-text-block"><h3>${esc(txt(v.title))}</h3><p>${esc(txt(v.body))}</p></article>`).join('');
- $('#selected-research').innerHTML=[1,3,5].map(id=>{const p=paper(id),d=detail(id);return `<article class="selected-study"><a href="${url(`paper-${id}.html`)}"><img src="${p.image}" alt="${esc(p.figureCaption)}" loading="lazy"></a><div><span class="venue-badge">${esc(p.badge)}</span><h3>${link(url(`paper-${id}.html`),p.title)}</h3><p>${esc(txt(d?.question)||'')}</p><span class="author-note">${esc(role(p))}</span><p>${link(url(`paper-${id}.html`),bi('了解问题、方法与发现 →','Explore the question, approach & findings →'))}</p></div></article>`}).join('');
+ $('#selected-research').innerHTML=[1,3,4].map(id=>{const p=paper(id),d=detail(id===4?6:id),href=url(detail(id)?'paper-'+id+'.html':'publications.html')+(detail(id)?'':'#paper-'+id),tags=id===1?['SCI & SSCI',bi('JCR一区','JCR Q1')]:id===3?['SSCI',bi('JCR一区','JCR Q1')]:['CSSCI'];return `<article class="selected-study"><a href="${href}"><img src="${p.image}" alt="${esc(p.figureCaption)}" loading="lazy"></a><div><span class="venue-badge">${esc(p.badge)}</span> ${tags.map(t=>`<span class="venue-badge">${esc(t)}</span>`).join(' ')}<h3>${link(href,en()&&p.titleEn?p.titleEn:p.title)}</h3><p>${esc(txt(d?.question)||'')}</p><span class="author-note">${esc(role(p))}</span><p>${link(href,bi('查看成果 →','Explore this output →'))}</p></div></article>`}).join('');
  $('#news-list').innerHTML=verified().news.slice().sort((a,b)=>b.date.localeCompare(a.date)).map(n=>`<li><time datetime="${n.date}">${n.date.replaceAll('-','.')}</time><div>${external(n.source,bi('论文正式发表：','Published: ')+(paper(n.id)?.title||n.title))}</div></li>`).join('')+`<li><time datetime="2026-07">2026.07</time><div>${bi('完成华东师范大学《人工智能教育》课程助教工作。','Completed my teaching assistantship for Artificial Intelligence in Education at ECNU.')}</div></li>`;
  // Dates use publisher publication histories, never made-up acceptance events.
  const newsItems=[...$('#news-list').children];newsItems.sort((a,b)=>b.querySelector('time').dateTime.localeCompare(a.querySelector('time').dateTime));$('#news-list').replaceChildren(...newsItems);
