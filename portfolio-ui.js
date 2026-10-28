@@ -15,6 +15,7 @@ function currentRoute(){
  const match=location.pathname.match(/paper-(\d+)\.html$/);
  if(match)return 'paper';
  if(/service.html$/.test(location.pathname))return 'about';
+ if(/cv.html$/.test(location.pathname)&&!document.querySelector('section[data-page="cv"]'))return 'home';
  if(/projects.html$/.test(location.pathname)&&!$('#project-list'))return 'home';
  const name=location.pathname.split('/').pop().replace('.html','');
  return ['research','publications','projects','teaching','service','about','cv'].includes(name)?name:'home';
