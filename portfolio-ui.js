@@ -41,7 +41,9 @@ function render(){
   [bi('智能教育专业','Intelligent Education'),'https://www.ecnu.edu.cn/info/1094/1494.htm'],
   [bi('黄昌勤','Changqin Huang'),'https://www.scholat.com/cqhuang']
  ];
- $('#intro-text').innerHTML=P.about.map((p,i)=>`<p>${i===0?introLinks.reduce((html,[label,href])=>html.replace(esc(label),label==='智能教育专业'?external(href,'智能教育')+'专业':external(href,label)),esc(txt(p))):esc(txt(p))}</p>`).join('');
+ const journals=window.LATEST_PROFILE.services.journals;
+ const reviewIntro=bi('担任以下期刊的审稿人：'+journals.join('、')+'。','I review for '+new Intl.ListFormat('en',{type:'conjunction'}).format(journals)+'.');
+ $('#intro-text').innerHTML=[txt(P.about[0]),reviewIntro,txt(P.about[1])].map((p,i)=>`<p>${i===0?introLinks.reduce((html,[label,href])=>html.replace(esc(label),label==='智能教育专业'?external(href,'智能教育')+'专业':external(href,label)),esc(txt(p))):esc(txt(p))}</p>`).join('');
  $('#research-agenda').textContent=txt(P.agenda);
  $('#research-directions').innerHTML=P.directions.map((r,i)=>`<article class="research-direction"><span class="direction-number">0${i+1}</span><div><h3>${esc(txt(r.title))}</h3><p class="research-question">${esc(txt(r.question))}</p><p>${esc(txt(r.body))}</p><h4>${bi('相关研究','Related Research')}</h4><ul>${r.papers.map(id=>`<li>${paperLink(id)}</li>`).join('')}</ul></div></article>`).join('');
  $('#research-vision').innerHTML=P.vision.map(v=>`<article class="portfolio-text-block"><h3>${esc(txt(v.title))}</h3><p>${esc(txt(v.body))}</p></article>`).join('');

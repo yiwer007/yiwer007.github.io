@@ -229,11 +229,6 @@ window.LATEST_PROFILE = {
         "year": 2025,
         "source": "https://onlinelibrary.wiley.com/journal/13652729/journal-metrics"
       },
-      "IEEE Transactions on Learning Technologies": {
-        "value": 7.4,
-        "year": 2025,
-        "source": "https://www.eduhk.hk/mit/en/event/20260618news"
-      },
       "Computational Intelligence": {
         "value": 1.9,
         "year": 2025,
@@ -242,7 +237,6 @@ window.LATEST_PROFILE = {
     },
     "journals": [
       "Journal of Computer Assisted Learning",
-      "IEEE Transactions on Learning Technologies",
       "Educational Technology Research and Development",
       "Education and Information Technologies",
       "Humanities & Social Sciences Communications",
