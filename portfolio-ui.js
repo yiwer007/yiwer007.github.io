@@ -38,12 +38,12 @@ function applyRoute(){
 function render(){
  const introLinks=[
   [bi('上海智能教育研究院','Shanghai Institute of AI for Education'),'https://aiedu.ecnu.edu.cn/'],
-  [bi('智能教育专业','Intelligent Education'),'https://www.ecnu.edu.cn/info/1094/1494.htm'],
+  [bi('智能教育博士研究生','Intelligent Education'),'https://www.ecnu.edu.cn/info/1094/1494.htm'],
   [bi('黄昌勤','Changqin Huang'),'https://www.scholat.com/cqhuang']
  ];
  const journals=window.LATEST_PROFILE.services.journals;
  const reviewIntro=bi('担任 '+journals.join('、')+' 等期刊审稿人。','I review for '+new Intl.ListFormat('en',{type:'conjunction'}).format(journals)+'.');
- $('#intro-text').innerHTML=[txt(P.about[0]),reviewIntro,txt(P.about[1])].map((p,i)=>`<p>${i===0?introLinks.reduce((html,[label,href])=>html.replace(esc(label),label==='智能教育专业'?external(href,'智能教育')+'专业':external(href,label)),esc(txt(p))):esc(txt(p))}</p>`).join('');
+ $('#intro-text').innerHTML=[txt(P.about[0]),reviewIntro,txt(P.about[1])].map((p,i)=>`<p>${i===0?introLinks.reduce((html,[label,href])=>html.replace(esc(label),label==='智能教育博士研究生'?external(href,'智能教育')+'博士研究生':external(href,label)),esc(txt(p))):esc(txt(p))}</p>`).join('');
  $('#research-agenda').textContent=txt(P.agenda);
  $('#research-directions').innerHTML=P.directions.map((r,i)=>`<article class="research-direction"><span class="direction-number">0${i+1}</span><div><h3>${esc(txt(r.title))}</h3><p class="research-question">${esc(txt(r.question))}</p><p>${esc(txt(r.body))}</p><h4>${bi('相关研究','Related Research')}</h4><ul>${r.papers.map(id=>`<li>${paperLink(id)}</li>`).join('')}</ul></div></article>`).join('');
  $('#research-vision').innerHTML=P.vision.map(v=>`<article class="portfolio-text-block"><h3>${esc(txt(v.title))}</h3><p>${esc(txt(v.body))}</p></article>`).join('');
@@ -54,7 +54,7 @@ function render(){
  for(const [i,project] of [...document.querySelectorAll('.project-item')].entries()){
   const existing=project.querySelector('.project-research-links');if(existing)existing.remove();
   const details=document.createElement('details');details.className='project-research-links';
-  details.innerHTML=`<summary>${bi('研究主题与同主题论文','Research focus & thematically related papers')}</summary><p>${bi('研究职责：','Research responsibility: ')}${esc(txt(window.LATEST_PROFILE.projects[i].responsibility))}</p><ul>${P.projectThemes[i].map(id=>`<li>${paperLink(id)}</li>`).join('')}</ul><small>${bi('按研究主题关联；不表示这些论文均由该项目资助。','Linked by research theme; this does not assert project funding for these papers.')}</small>`;
+  details.innerHTML=`<summary>${bi('相关成果产出','Related Outputs')}</summary><ul>${P.projectThemes[i].map(id=>`<li>${paperLink(id)}</li>`).join('')}</ul>`;
   project.querySelector('div').append(details);
  }
  for(const article of document.querySelectorAll('.publication-item')){
