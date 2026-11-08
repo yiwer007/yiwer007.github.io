@@ -22,10 +22,6 @@ window.PORTFOLIO_VERIFIED = {
         "zh": "显式思维组在问题解决、批判思维和写作表现方面更好，并呈现更积极的元认知调节；创造力维度未见显著组间差异。",
         "en": "The explicit-thinking group showed stronger problem solving, critical thinking, writing performance, and metacognitive regulation; creativity did not differ significantly."
       },
-      "role": {
-        "zh": "第一作者",
-        "en": "First author"
-      },
       "sources": [
         "https://ieeexplore.ieee.org/document/11535285/",
         "https://doi.org/10.1109/TLT.2026.3696968"
@@ -52,10 +48,6 @@ window.PORTFOLIO_VERIFIED = {
       "findings": {
         "zh": "PT-PBL提高了阅读表现和学习动机；高参与学生的阅读收益更明显，访谈反映其更专注于任务并更频繁反思。",
         "en": "PT-PBL improved reading performance and motivation; gains were greater among highly engaged students, who reported stronger focus and reflection."
-      },
-      "role": {
-        "zh": "第二作者",
-        "en": "Second author"
       },
       "sources": [
         "https://www.nature.com/articles/s41599-025-04919-4",
@@ -84,10 +76,6 @@ window.PORTFOLIO_VERIFIED = {
         "zh": "个性化组的阅读成绩与学习动机更高；专家评分未发现生成题目与专家题目的质量存在显著差异。",
         "en": "The personalized group achieved higher reading scores and motivation; expert ratings found no significant quality difference between generated and expert-written questions."
       },
-      "role": {
-        "zh": "第二作者",
-        "en": "Second author"
-      },
       "sources": [
         "https://ieeexplore.ieee.org/document/10539340/",
         "https://doi.org/10.1109/TLT.2024.3405747"
@@ -114,10 +102,6 @@ window.PORTFOLIO_VERIFIED = {
       "findings": {
         "zh": "多智能体组在推理、评价、应用任务及学习动机方面表现更好，并呈现更强的抽象与概括联系；字面理解未见显著差异。",
         "en": "The multi-agent group performed better in reasoning, evaluation, application, and motivation, with stronger abstraction/generalization connections; literal comprehension did not differ significantly."
-      },
-      "role": {
-        "zh": "第二作者；中文论文的英文译文",
-        "en": "Second author; English translation of the Chinese article"
       },
       "sources": [
         "https://journal.hep.com.cn/fed/EN/10.3868/s110-021-026-0006-5",
@@ -146,10 +130,6 @@ window.PORTFOLIO_VERIFIED = {
       "findings": {
         "zh": "个性化反馈提高方案质量与细化程度，并略减少被忽略的反馈；应用反馈与更好的表现相关，共同建构和协商分歧与高水平采纳相关。",
         "en": "Personalization improved solution quality and elaboration and slightly reduced ignored feedback; applied feedback predicted performance, while co-construction and negotiation were associated with higher-level uptake."
-      },
-      "role": {
-        "zh": "共同作者（第六作者）",
-        "en": "Co-author (sixth author)"
       },
       "sources": [
         "https://ajet.org.au/index.php/AJET/article/view/11512",
