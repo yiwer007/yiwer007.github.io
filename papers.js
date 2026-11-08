@@ -74,7 +74,7 @@ window.PUBLICATIONS = [
     "title": "从单智能体到多智能体：大模型智能体支持下的激励型学习活动设计与实证研究",
     "titleEn": "From single-agent to multi-agent systems: Design and empirical study of motivational learning activities supported by large language model agents",
     "authors": "黄昌勤, 钟益华, 王希哲, 韩中美, 魏同权",
-    "badge": "华东师大学报（教育科学版）",
+    "badge": "华东师范大学学报（教育科学版）",
     "publication": "华东师范大学学报（教育科学版）, 43(5), 44–56",
     "roleZh": "",
     "roleEn": "",
