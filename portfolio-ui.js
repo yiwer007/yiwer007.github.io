@@ -14,7 +14,7 @@ function role(p){return p.roleZh?bi(p.roleZh,p.roleEn):bi('合作作者','Co-aut
 function currentRoute(){
  const match=location.pathname.match(/paper-(\d+)\.html$/);
  if(match)return 'paper';
- if(/service.html$/.test(location.pathname))return 'about';
+ if(/\/(service|teaching)\.html$/.test(location.pathname))return 'about';
  if(/cv.html$/.test(location.pathname)&&!document.querySelector('section[data-page="cv"]'))return 'home';
  if(/projects.html$/.test(location.pathname)&&!$('#project-list'))return 'home';
  const name=location.pathname.split('/').pop().replace('.html','');
@@ -26,7 +26,7 @@ function applyRoute(){
  if(target?.closest('section[data-page]') && route==='home')route=target.closest('section').dataset.page;
  document.body.dataset.page=route;
  for(const section of document.querySelectorAll('.main-content>section[data-page]'))section.hidden=section.dataset.page!==route;
- const titles={home:bi('学术研究主页','Academic Homepage'),research:bi('研究议程','Research'),publications:bi('成果','Research Outputs'),projects:bi('项目','Projects'),teaching:bi('教学','Teaching'),service:bi('学术服务','Academic Service'),about:bi('更多','More'),cv:bi('学术简历','Academic CV'),paper:bi('研究详情','Research Detail')};
+ const titles={home:bi('学术研究主页','Academic Homepage'),research:bi('研究方向','Research Areas'),publications:bi('研究成果','Research Outputs'),projects:bi('项目','Projects'),teaching:bi('教学','Teaching'),service:bi('学术服务','Academic Service'),about:bi('更多','More'),cv:bi('学术简历','Academic CV'),paper:bi('研究详情','Research Detail')};
  document.title=bi('钟益华','Yihua Zhong')+' | '+titles[route];
  for(const a of document.querySelectorAll('.main-nav>a:not(#language)')){
   const active=a.getAttribute('href').split('?')[0].split('#')[0]===(route==='home'?'index.html':route==='paper'?'publications.html':route+'.html');
@@ -44,8 +44,6 @@ function render(){
  $('#news-list').innerHTML=verified().news.slice().sort((a,b)=>b.date.localeCompare(a.date)).map(n=>`<li><time datetime="${n.date}">${n.date.replaceAll('-','.')}</time><div>${external(n.source,bi('论文正式发表：','Published: ')+(paper(n.id)?.title||n.title))}</div></li>`).join('')+`<li><time datetime="2026-07">2026.07</time><div>${bi('完成华东师范大学《人工智能教育》课程助教工作。','Completed my teaching assistantship for Artificial Intelligence in Education at ECNU.')}</div></li>`;
  // Dates use publisher publication histories, never made-up acceptance events.
  const newsItems=[...$('#news-list').children];newsItems.sort((a,b)=>b.querySelector('time').dateTime.localeCompare(a.querySelector('time').dateTime));$('#news-list').replaceChildren(...newsItems);
- $('#teaching-philosophy').textContent=txt(P.teachingPhilosophy);
- $('#teaching-courses').innerHTML=P.courses.map(c=>`<article class="portfolio-text-block"><h3>${esc(txt(c.level))}</h3><p>${esc(txt(c.items))}</p></article>`).join('');
  for(const [i,project] of [...document.querySelectorAll('.project-item')].entries()){
   const existing=project.querySelector('.project-research-links');if(existing)existing.remove();
   const details=document.createElement('details');details.className='project-research-links';
