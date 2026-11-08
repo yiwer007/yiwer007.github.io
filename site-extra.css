@@ -88,3 +88,4 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offse
 .service-content .journal-impact{color:var(--muted)}
 .service-content .journal-impact a{color:inherit;text-decoration:underline;text-decoration-color:#cbd9e3;text-underline-offset:3px}
 .service-content .journal-impact a:hover{color:var(--blue)}
+.selected-study .venue-badge{display:inline-block;max-width:100%;font-size:10px;line-height:1.4}
