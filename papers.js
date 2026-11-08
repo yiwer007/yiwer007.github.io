@@ -184,7 +184,7 @@ window.PUBLICATIONS = [
     "title": "Effects of Personalized Generative AI on Student Creativity: Evidence from Creative Performance, Self-efficacy, and Attention Allocation",
     "titleEn": null,
     "authors": "Yixuan Chen, Xuemei Wu, Yihua Zhong, Changqin Huang",
-    "badge": "ICTE 2025",
+    "badge": "International Conference on Technology in Education 2025",
     "publication": "International Conference on Technology in Education (ICTE 2025). CCIS 2752, 376–388. Springer, 2026",
     "roleZh": "",
     "roleEn": "",
