@@ -18,6 +18,6 @@ window.PORTFOLIO={
  {title:bi('持续性智能体学习支持','Agentic Learning Systems'),body:bi('未来拟从单次活动走向持续学习支持，研究多智能体的诊断、协作与干预机制，以及长期使用中的学习变化。','I aim to move from individual learning activities toward sustained support, examining multi-agent diagnosis, collaboration, intervention, and learning changes over time.')},
  {title:bi('动态个性化生成式学习','Personalized Generative Learning'),body:bi('未来拟结合认知、情感和行为状态，研究动态生成的问题、反馈与支架，并通过真实教学中的过程与结果证据评估其效果。','I aim to investigate dynamically generated questions, feedback, and scaffolds informed by cognitive, affective, and behavioral states, evaluated through process and outcome evidence in educational settings.')}
  ],
- projectThemes:[[1,3],[8],[7],[4,6],[8],[7],[3,8],[1,9]]
+ projectThemes:[[1,3],[8],[7],[4,6],[8],[3,8],[1,9],[]]
 };
 })();

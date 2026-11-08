@@ -53,8 +53,9 @@ function render(){
  const newsItems=[...$('#news-list').children];newsItems.sort((a,b)=>b.querySelector('time').dateTime.localeCompare(a.querySelector('time').dateTime));$('#news-list').replaceChildren(...newsItems);
  for(const [i,project] of [...document.querySelectorAll('.project-item')].entries()){
   const existing=project.querySelector('.project-research-links');if(existing)existing.remove();
+  const related=P.projectThemes[i];if(!related?.length)continue;
   const details=document.createElement('details');details.className='project-research-links';
-  details.innerHTML=`<summary>${bi('相关成果产出','Related Outputs')}</summary><ul>${P.projectThemes[i].map(id=>`<li>${paperLink(id)}</li>`).join('')}</ul>`;
+  details.innerHTML=`<summary>${bi('相关成果产出','Related Outputs')}</summary><ul>${related.map(id=>`<li>${paperLink(id)}</li>`).join('')}</ul>`;
   project.querySelector('div').append(details);
  }
  for(const article of document.querySelectorAll('.publication-item')){
