@@ -4,7 +4,7 @@
 const bi=(zh,en)=>({zh,en});
 window.PORTFOLIO={
  about:[
- bi('目前就读于华东师范大学 · 上海智能教育研究院，为智能教育专业博士研究生，师从黄昌勤教授。学习经历涵盖计算机科学、教育技术学与智能教育。主要从事生成式 AI 教育应用、智能体支持学习、个性化学习、问题式学习与学习者建模研究，已发表多篇学术论文。','I am a Ph.D. student in Intelligent Education at the Shanghai Institute of AI for Education, East China Normal University, supervised by Prof. Changqin Huang. My academic background spans computer science, educational technology, and intelligent education. My research focuses on generative AI in education, agent-supported learning, personalized learning, problem-based learning, and learner modeling. I have published several academic papers.'),
+ bi('目前就读于华东师范大学 · 上海智能教育研究院，为智能教育专业博士研究生，师从黄昌勤教授。学习经历涵盖计算机科学、教育技术学与智能教育。主要从事生成式 AI 教育应用、智能体支持学习、个性化学习、问题式学习与学习者建模研究，已发表多篇高水平学术论文。','I am a Ph.D. student in Intelligent Education at the Shanghai Institute of AI for Education, East China Normal University, supervised by Prof. Changqin Huang. My academic background spans computer science, educational technology, and intelligent education. My research focuses on generative AI in education, agent-supported learning, personalized learning, problem-based learning, and learner modeling. I have published several papers in leading academic venues.'),
  bi('欢迎关注我的研究工作。如果您对相关研究方向感兴趣，期待与您交流，并探索进一步合作的可能。','Thank you for your interest in my research. If our research interests overlap, I look forward to hearing from you and exploring opportunities to collaborate.')],
  agenda:bi('从学习需求出发设计 AI 支持机制，再通过教学实验与过程数据检验其作用：把系统设计、学习机制与实证证据连接起来。','Starting from learners’ needs, I connect the design of AI support mechanisms with classroom studies and process data to examine how and under what conditions they support learning.'),
  directions:[
