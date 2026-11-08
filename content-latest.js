@@ -219,11 +219,6 @@ window.LATEST_PROFILE = {
         "year": 2025,
         "source": "https://www.nature.com/palcomms/journal-information"
       },
-      "International Journal of Educational Technology in Higher Education": {
-        "value": 38.7,
-        "year": 2025,
-        "source": "https://link.springer.com/journal/41239"
-      },
       "International Journal of Artificial Intelligence in Education": {
         "value": 8.5,
         "year": 2024,
@@ -251,7 +246,6 @@ window.LATEST_PROFILE = {
       "Educational Technology Research and Development",
       "Education and Information Technologies",
       "Humanities & Social Sciences Communications",
-      "International Journal of Educational Technology in Higher Education",
       "International Journal of Artificial Intelligence in Education",
       "Computational Intelligence",
       "Journal of Research in Reading"
