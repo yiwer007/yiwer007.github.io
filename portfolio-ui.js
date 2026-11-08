@@ -36,7 +36,12 @@ function applyRoute(){
  if(first)$('.skip-link').href='#'+first.id;
 }
 function render(){
- $('#intro-text').innerHTML=P.about.map((p,i)=>`<p>${i===0?esc(txt(p)).replace(bi('黄昌勤','Changqin Huang'),external('https://www.scholat.com/cqhuang',bi('黄昌勤','Changqin Huang'))):esc(txt(p))}</p>`).join('');
+ const introLinks=[
+  [bi('上海智能教育研究院','Shanghai Institute of AI for Education'),'https://aiedu.ecnu.edu.cn/'],
+  [bi('智能教育专业','Intelligent Education'),'https://www.ecnu.edu.cn/info/1094/1494.htm'],
+  [bi('黄昌勤','Changqin Huang'),'https://www.scholat.com/cqhuang']
+ ];
+ $('#intro-text').innerHTML=P.about.map((p,i)=>`<p>${i===0?introLinks.reduce((html,[label,href])=>html.replace(esc(label),external(href,label)),esc(txt(p))):esc(txt(p))}</p>`).join('');
  $('#research-agenda').textContent=txt(P.agenda);
  $('#research-directions').innerHTML=P.directions.map((r,i)=>`<article class="research-direction"><span class="direction-number">0${i+1}</span><div><h3>${esc(txt(r.title))}</h3><p class="research-question">${esc(txt(r.question))}</p><p>${esc(txt(r.body))}</p><h4>${bi('相关研究','Related Research')}</h4><ul>${r.papers.map(id=>`<li>${paperLink(id)}</li>`).join('')}</ul></div></article>`).join('');
  $('#research-vision').innerHTML=P.vision.map(v=>`<article class="portfolio-text-block"><h3>${esc(txt(v.title))}</h3><p>${esc(txt(v.body))}</p></article>`).join('');

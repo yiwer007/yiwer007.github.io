@@ -259,10 +259,6 @@ window.LATEST_PROFILE = {
     "reviewing": {
       "zh": "累计审稿时长超过 200 小时",
       "en": "More than 200 hours of peer review"
-    },
-    "membership": {
-      "zh": "中国人工智能学会（CAAI）会员",
-      "en": "Member, Chinese Association for Artificial Intelligence (CAAI)"
     }
   },
   "honors": [

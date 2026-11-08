@@ -39,7 +39,7 @@
       'Thank you for your interest in my research. I welcome academic discussions and opportunities for collaboration in these areas.'
     ];
     $('#intro-text').innerHTML=bios.map(text=>`<p>${esc(text)}</p>`).join('');
-    $('#research-interests').innerHTML=(lang==='zh'?['生成式 AI 教育应用','智能体支持学习','个性化学习','学习分析']:['Generative AI in Education','Agent-Supported Learning','Personalized Learning','Learning Analytics']).map(s=>`<span>${esc(s)}</span>`).join('');
+    $('#research-interests').innerHTML=(lang==='zh'?['智能教育','生成式 AI 教育应用','智能体支持学习','个性化学习','问题式学习','学习者建模']:['Intelligent Education','Generative AI in Education','Agent-Supported Learning','Personalized Learning','Problem-Based Learning','Learner Modeling']).map(s=>`<span>${esc(s)}</span>`).join('');
   }
   function renderEducation() {
     const schools=config.schools;
@@ -68,7 +68,7 @@
     const awards=profile.honors.flatMap(h=>h.years.split('、').map(year=>({...h,year:Number(year)}))).sort((a,b)=>b.year-a.year);
     $('#honor-list').innerHTML=awards.map(h=>`<div><time>${h.year}</time><p>${esc(txt(h.school))} ${esc(txt(h.title))}</p></div>`).join('');
     $('#experience-list').innerHTML=profile.teaching.map(t=>`<article><time>${esc(t.period.replace('–',' — '))}</time><div><h3>${esc(txt(t.school))}</h3><p>${esc(bi('《','')+txt(t.course)+bi('》',''))} · ${esc(txt(t.role))}</p><p>${esc(txt(t.description))}</p></div></article>`).join('');
-    $('#service-content').innerHTML=`<h3>${bi('期刊审稿人','Journal Reviewer')}</h3><ul>${profile.services.journals.map(j=>{const m=profile.services.journalMetrics[j];return `<li>${esc(j)} <span class="journal-impact">(${external(m.source,`Impact Factor: ${m.value.toFixed(1)}, ${m.year}`)})</span></li>`;}).join('')}</ul><p>${esc(txt(profile.services.reviewing))} · ${esc(txt(profile.services.membership))}</p>`;
+    $('#service-content').innerHTML=`<h3>${bi('期刊审稿人','Journal Reviewer')}</h3><ul>${profile.services.journals.map(j=>{const m=profile.services.journalMetrics[j];return `<li>${esc(j)} <span class="journal-impact">(${external(m.source,`Impact Factor: ${m.value.toFixed(1)}, ${m.year}`)})</span></li>`;}).join('')}</ul><p>${esc(txt(profile.services.reviewing))}</p>`;
     $('#skills-list').innerHTML=profile.skills.map(s=>`<div><h3>${esc(txt(s.category))}</h3><p>${s.items.map(i=>esc(txt(i))).join(bi('、',', '))}</p></div>`).join('');
   }
   function render() {
