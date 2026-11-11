@@ -64,7 +64,7 @@ function render(){
  }
  const id=Number(location.pathname.match(/paper-(\d+)\.html$/)?.[1]);
  if(id&&detail(id))renderDetail(id);
- for(const a of document.querySelectorAll('.main-nav>a:not(#language),.sidebar-cv,.site-title')){
+ for(const a of document.querySelectorAll('.main-nav>a:not(#language),.sidebar-cv,.site-title,.all-outputs-link')){
   const href=a.getAttribute('href');if(!href)return;
   const [path,hash]=href.split('#');a.href=path.split('?')[0]+(en()?'?lang=en':'')+(hash?'#'+hash:'');
  }
